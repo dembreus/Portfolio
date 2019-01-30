@@ -6,7 +6,7 @@ const about = props => {
       {" "}
       {/* <!-- Section heading --> */}
       <h2 className="h1-responsive font-weight-bold text-center my-5">
-        Why is it so great?
+        Why choose me?
       </h2>
       {/* <!-- Section description --> */}
       <p className="lead grey-text text-center w-responsive mx-auto mb-5">

@@ -10,13 +10,13 @@ const navBar = () => {
     { name: "Contact", href: "/" }
   ];
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top scrolling-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="/">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div className="container">
+        <a className="navbar-brand" href="/">
           Dillon Embreus
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarTogglerDemo02"
@@ -24,9 +24,9 @@ const navBar = () => {
           aria-expanded="true"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <Links links={links} />
         </div>
       </div>

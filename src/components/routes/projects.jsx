@@ -1,6 +1,27 @@
 import React, { Fragment } from "react";
+import Card from "../common/card";
 
 const projects = props => {
+  const projects = [
+    {
+      image: "https://mdbootstrap.com/img/Photos/Others/images/58.jpg",
+      title: "Vidly",
+      description: "Vidly description goes here",
+      links: ["/"]
+    },
+    {
+      image: "https://mdbootstrap.com/img/Photos/Others/project4.jpg",
+      title: "Create User Profile",
+      description: "Create User Profile",
+      links: ["/"]
+    },
+    {
+      image: "https://mdbootstrap.com/img/Photos/Others/images/88.jpg",
+      title: "New",
+      description: "New project description goes here",
+      links: ["/"]
+    }
+  ];
   return (
     <Fragment>
       {" "}
@@ -8,7 +29,7 @@ const projects = props => {
       <div className="container">
         {/* <!-- Section heading --> */}
         <h2 className="h1-responsive font-weight-bold mb-5">
-          Our best projects
+          My favorite projects
         </h2>
         {/* <!-- Section description --> */}
         <p className="grey-text w-responsive mx-auto mb-5">
@@ -19,86 +40,9 @@ const projects = props => {
 
         {/* <!-- Grid row --> */}
         <div className="row text-center">
-          {/* <!-- Grid column --> */}
-          <div className="col-lg-4 col-md-12 mb-lg-0 mb-4">
-            {/* <!--Featured image--> */}
-            <div className="view overlay rounded z-depth-1">
-              <img
-                src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg"
-                className="img-fluid"
-                alt="Sample project image"
-              />
-              <a>
-                <div className="mask rgba-white-slight" />
-              </a>
-            </div>
-            {/* <!--Excerpt--> */}
-            <div className="card-body pb-0">
-              <h4 className="font-weight-bold my-3">Title of the news</h4>
-              <p className="grey-text">
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet ut et voluptates repudiandae.
-              </p>
-              <a className="btn btn-purple btn-sm">
-                <i className="fas fa-clone left" /> View project
-              </a>
-            </div>
-          </div>
-          {/* <!-- Grid column --> */}
-
-          {/* <!-- Grid column --> */}
-          <div className="col-lg-4 col-md-6 mb-md-0 mb-4">
-            {/* <!--Featured image--> */}
-            <div className="view overlay rounded z-depth-1">
-              <img
-                src="https://mdbootstrap.com/img/Photos/Others/project4.jpg"
-                className="img-fluid"
-                alt="Sample project image"
-              />{" "}
-              <a>
-                <div className="mask rgba-white-slight" />
-              </a>
-            </div>
-            {/* <!--Excerpt--> */}
-            <div className="card-body pb-0">
-              <h4 className="font-weight-bold my-3">Title of the news</h4>
-              <p className="grey-text">
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet ut et voluptates repudiandae.
-              </p>
-              <a className="btn btn-purple btn-sm">
-                <i className="fas fa-clone left" /> View project
-              </a>
-            </div>
-          </div>
-          {/* <!-- Grid column --> */}
-
-          {/* <!-- Grid column --> */}
-          <div className="col-lg-4 col-md-6">
-            {/* <!--Featured image--> */}
-            <div className="view overlay rounded z-depth-1">
-              <img
-                src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg"
-                className="img-fluid"
-                alt="Sample project image"
-              />
-              <a>
-                <div className="mask rgba-white-slight" />
-              </a>
-            </div>
-            {/* <!--Excerpt--> */}
-            <div className="card-body pb-0">
-              <h4 className="font-weight-bold my-3">Title of the news</h4>
-              <p className="grey-text">
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet ut et voluptates repudiandae.
-              </p>
-              <a className="btn btn-purple btn-sm">
-                <i className="fas fa-clone left" /> View project
-              </a>
-            </div>
-          </div>
-          {/* <!-- Grid column --> */}
+          {projects.map(project => {
+            return <Card data={project} />;
+          })}
         </div>
         {/* <!-- Grid row --> */}
       </div>

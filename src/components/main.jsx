@@ -5,6 +5,7 @@ import Gallery from "./routes/gallery";
 import Testimonials from "./routes/testimonials";
 import CallToAction from "./routes/callToAction";
 import Articles from "./routes/articles";
+import Contact from "./routes/contact";
 
 const main = () => {
   return (
@@ -35,13 +36,7 @@ const main = () => {
       <Articles />
       {/* <!--Section: articles--> */}
       {/* <!--Section: contact--> */}
-      <section
-        id="contact"
-        className="py-5"
-        style={{ backgroundColor: "#eee" }}
-      >
-        <div className="container" />
-      </section>
+      <Contact />
       {/* <!--Section: contact--> */}
     </main>
   );

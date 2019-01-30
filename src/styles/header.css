@@ -1,3 +1,29 @@
+/* Required for full background image */
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #191654 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  background-color: #191654;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #191654 !important;
+  }
+}
+
 .rgba-gradient {
   background: -moz-linear-gradient(
     45deg,
@@ -14,4 +40,15 @@
     rgba(213, 15, 61, 0.6),
     rgba(13, 17, 198, 0.69) 100%
   );
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

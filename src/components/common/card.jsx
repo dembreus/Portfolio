@@ -15,7 +15,7 @@ const card = ({ data }) => {
         </a>
       </div>
       {/* <!--Excerpt--> */}
-      <div className="card-body pb-0 mb-3">
+      <div className="card-body pb-0">
         <h4 className="font-weight-bold my-3">{data.title}</h4>
         <p className="grey-text">{data.description}</p>
         <a className="btn btn-default btn-sm" href={data.links[0]}>

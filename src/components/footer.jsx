@@ -18,7 +18,7 @@ const footer = props => {
           </li>
           <li className="list-inline-item">
             <a className="btn-floating btn-gplus mx-1">
-              <i className="fab fa-google-plus-g"> </i>
+              <i className="fab fa-google-plus-g" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -27,7 +27,7 @@ const footer = props => {
             </a>
           </li>
           <li className="list-inline-item">
-            <a className="btn-floating btn-dribbble mx-1">
+            <a className="btn-floating btn-dribbble mx-1" href="/">
               <i className="fab fa-dribbble"> </i>
             </a>
           </li>

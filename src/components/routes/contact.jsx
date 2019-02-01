@@ -6,13 +6,14 @@ const contact = props => {
       <div className="container">
         {/* <!-- Section heading --> */}
         <h2 className="h1-responsive font-weight-bold text-center mb-5">
-          Contact us
+          Contact Me
         </h2>
         {/* <!-- Section description --> */}
         <p className="text-center w-responsive mx-auto mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
-          amet numquam iure provident voluptate esse quasi, veritatis totam
-          voluptas nostrum quisquam eum porro a pariatur veniam.
+          The best way to contact me is via phone call, but you may text or
+          email as well. If I do not answer don't be afaid to leave a voice
+          mail. The best hours to contact me via phone is Monday - Friday, 10:00
+          am - 4:00 pm Mountain Time.
         </p>
 
         {/* <!-- Grid row --> */}
@@ -29,11 +30,10 @@ const contact = props => {
                       type="text"
                       id="contact-name"
                       className="form-control"
+                      placeholder="Your name"
                     />
-                    >
-                    <label for="contact-name" className="">
-                      Your name
-                    </label>
+
+                    <label for="contact-name" className="" />
                   </div>
                 </div>
                 {/* <!-- Grid column --> */}
@@ -45,11 +45,10 @@ const contact = props => {
                       type="text"
                       id="contact-email"
                       className="form-control"
+                      placeholder="Your email"
                     />
-                    >
-                    <label for="contact-email" className="">
-                      Your email
-                    </label>
+
+                    <label for="contact-email" className="" />
                   </div>
                 </div>
                 {/* <!-- Grid column --> */}
@@ -65,11 +64,10 @@ const contact = props => {
                       type="text"
                       id="contact-Subject"
                       className="form-control"
+                      placeholder="Subject"
                     />
-                    >
-                    <label for="contact-Subject" className="">
-                      Subject
-                    </label>
+
+                    <label for="contact-Subject" className="" />
                   </div>
                 </div>
                 {/* <!-- Grid column --> */}
@@ -85,9 +83,10 @@ const contact = props => {
                       type="text"
                       id="contact-message"
                       className="form-control md-textarea"
+                      placeholder="Your message"
                       rows="3"
                     />
-                    <label for="contact-message">Your message</label>
+                    <label for="contact-message" />
                   </div>
                 </div>
                 {/* <!-- Grid column --> */}
@@ -106,15 +105,15 @@ const contact = props => {
             <ul className="list-unstyled mb-0">
               <li>
                 <i className="fas fa-map-marker-alt fa-2x purple-text" />
-                <p>San Francisco, CA 94126, USA</p>
+                <p>Millcreek, UT 84124, USA</p>
               </li>
               <li>
                 <i className="fas fa-phone fa-2x mt-4 purple-text" />
-                <p>+ 01 234 567 89</p>
+                <p>+ 01 385 444 6272</p>
               </li>
               <li>
                 <i className="fas fa-envelope fa-2x mt-4 purple-text" />
-                <p className="mb-0">contact@example.com</p>
+                <p className="mb-0">dillon.embreus@gmail.com</p>
               </li>
             </ul>
           </div>

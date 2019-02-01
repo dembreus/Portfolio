@@ -5,7 +5,7 @@ import "../styles/header.css";
 const header = () => {
   return (
     <header>
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <!-- Full Page Intro --> */}
       <div id="intro-section" className="view">
         <video
@@ -30,16 +30,18 @@ const header = () => {
             <div className="row wow fadeIn">
               {/* <!--Grid column--> */}
               <div className="col-md-12 mb-4 white-text text-center wow fadeIn">
-                <h3 className="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">
-                  Creative Agency
-                </h3>
+                <h1 className="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">
+                  Dillon Embreus
+                </h1>
                 <hr className="hr-light my-4 w-75" />
                 <h4 className="subtext-header mt-2 mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                  deleniti consequuntur nihil.
+                  Full Stack Web Developer
                 </h4>
-                <a href="#!" className="btn btn-rounded btn-outline-white">
-                  <i className="fas fa-home" /> Visit us
+                <a
+                  href="#projects"
+                  className="btn btn-rounded btn-outline-white"
+                >
+                  <i className="fas fa-home" /> View projects
                 </a>
               </div>
               {/* <!--Grid column--> */}

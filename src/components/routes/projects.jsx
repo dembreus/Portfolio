@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Card from "../common/card";
 
 const projects = props => {
@@ -23,8 +23,11 @@ const projects = props => {
     }
   ];
   return (
-    <Fragment>
-      {" "}
+    <section
+      id="projects"
+      className="text-center py-5"
+      style={{ backgroundColor: "#eee" }}
+    >
       {/* <!-- Container --> */}
       <div className="container">
         {/* <!-- Section heading --> */}
@@ -33,9 +36,8 @@ const projects = props => {
         </h2>
         {/* <!-- Section description --> */}
         <p className="grey-text w-responsive mx-auto mb-5">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit est laborum.
+          Some of these projects are still in development but getting better
+          every iteration.
         </p>
 
         {/* <!-- Grid row --> */}
@@ -47,7 +49,7 @@ const projects = props => {
         {/* <!-- Grid row --> */}
       </div>
       {/* <!-- Container --> */}
-    </Fragment>
+    </section>
   );
 };
 

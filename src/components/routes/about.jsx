@@ -1,9 +1,17 @@
-import React, { Fragment } from "react";
+import React from "react";
+import BulletList from "./../common/bulletList";
 
 const about = props => {
+  const reasons = [
+    {
+      head: "Safety",
+      body:
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.",
+      icon: "fas fa-share fa-lg indigo-text"
+    }
+  ];
   return (
-    <Fragment>
-      {" "}
+    <section className="my-5">
       {/* <!-- Section heading --> */}
       <h2 className="h1-responsive font-weight-bold text-center my-5">
         Why choose me?
@@ -30,24 +38,7 @@ const about = props => {
         {/* <!-- Grid column --> */}
         <div className="col-lg-7">
           {/* <!-- Grid row --> */}
-          <div className="row mb-3">
-            {/* <!-- Grid column --> */}
-            <div className="col-1">
-              <i className="fas fa-share fa-lg indigo-text" />
-            </div>
-            {/* <!-- Grid column --> */}
-
-            {/* <!-- Grid column --> */}
-            <div className="col-xl-10 col-md-11 col-10">
-              <h5 className="font-weight-bold mb-3">Safety</h5>
-              <p className="grey-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
-                minima veniam, quis nostrum exercitationem ullam. Reprehenderit
-                maiores aperiam assumenda deleniti hic.
-              </p>
-            </div>
-            {/* <!-- Grid column --> */}
-          </div>
+          <BulletList data={reasons} />
           {/* <!-- Grid row --> */}
 
           {/* <!-- Grid row --> */}
@@ -95,7 +86,7 @@ const about = props => {
         {/* <!--Grid column--> */}
       </div>
       {/* <!-- Grid row --> */}
-    </Fragment>
+    </section>
   );
 };
 
